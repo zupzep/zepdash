@@ -81,7 +81,3 @@ git clone https://github.com/zupzep/zepdash.git
 cd zepdash
 
 open index.html
-
-
-
-
