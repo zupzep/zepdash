@@ -1,6 +1,7 @@
 # zepdash  
 [![en](https://img.shields.io/badge/lang-en-red.svg)](README.md)
 [![id](https://img.shields.io/badge/lang-id-blue.svg)](README.id.md)
+![GitHub all releases](https://img.shields.io/github/downloads/zupzep/zepdash/total?color=brightgreen&label=downloads)
 
 <img src="https://raw.githubusercontent.com/zupzep/zepdash/4416bd5b54ec5591015c683400a423402f71ed3b/assets/img/logo.png" alt="logo" width="100">
 
