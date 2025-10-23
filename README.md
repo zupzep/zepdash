@@ -11,7 +11,7 @@ It focuses on essential UI elements — clean, simple, and perfect as a base for
 - 💎 **Minimal, responsive, and modern** design
 - 🧩 Includes only **essential UI components**
 - 🧭 Clean and easy-to-understand structure
-- 🪶 Beautiful icons using **[Phosphor Icons](https://phosphoricons.com/)**\
+- 🪶 Beautiful icons using **[Phosphor Icons](https://phosphoricons.com/)**
 
 ---
 
@@ -74,3 +74,4 @@ git clone https://github.com/zupzep/zepdash.git
 cd zepdash
 
 open index.html
+
