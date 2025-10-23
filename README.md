@@ -1,6 +1,8 @@
 # zepdash  
 
-![Zepdash Logo](https://raw.githubusercontent.com/zupzep/zepdash/4416bd5b54ec5591015c683400a423402f71ed3b/assets/img/logo.png)
+<p align="center">
+  <img src="https://raw.githubusercontent.com/zupzep/zepdash/4416bd5b54ec5591015c683400a423402f71ed3b/assets/img/logo.png" alt="Zepdash Logo" width="180">
+</p>
 
 **Zepdash — Minimal Bootstrap 5 Admin Template**
 
@@ -77,3 +79,4 @@ git clone https://github.com/zupzep/zepdash.git
 cd zepdash
 
 open index.html
+
