@@ -204,7 +204,7 @@ body {
 }
 
 .zd-sidenav-light .zd-sidenav-menu .zd-sidenav-menu-heading {
-  color: #adb5bd;
+  /* color: #adb5bd; */
 }
 
 .zd-sidenav-light .zd-sidenav-menu .nav-link {
@@ -298,4 +298,5 @@ ul.dropdown-menu li a.dropdown-item{
 .card {
   border-radius: 0.8rem;
   border-color: #EAEDF4;
+
 }
