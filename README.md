@@ -1,4 +1,6 @@
 # zepdash  
+[![en](https://img.shields.io/badge/lang-en-red.svg)](README.md)
+[![id](https://img.shields.io/badge/lang-id-blue.svg)](README.id.md)
 
 <img src="https://raw.githubusercontent.com/zupzep/zepdash/4416bd5b54ec5591015c683400a423402f71ed3b/assets/img/logo.png" alt="logo" width="100">
 **zepdash — Minimal Bootstrap 5 Admin Template**
@@ -77,3 +79,4 @@ git clone https://github.com/zupzep/zepdash.git
 cd zepdash
 
 open index.html
+
