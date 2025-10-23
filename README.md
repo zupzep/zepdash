@@ -1,5 +1,8 @@
 # zepdash  
-**zepdash — Minimal Bootstrap 5 Admin Template**
+
+![Zepdash Logo](https://raw.githubusercontent.com/zupzep/zepdash/4416bd5b54ec5591015c683400a423402f71ed3b/assets/img/logo.png)
+
+**Zepdash — Minimal Bootstrap 5 Admin Template**
 
 Zepdash is a **lightweight and modern admin dashboard template** built with **Bootstrap 5**.  
 It focuses on essential UI elements — clean, simple, and perfect as a base for your own dashboard or CMS project.
@@ -74,4 +77,3 @@ git clone https://github.com/zupzep/zepdash.git
 cd zepdash
 
 open index.html
-
