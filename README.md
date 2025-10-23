@@ -11,8 +11,7 @@ It focuses on essential UI elements — clean, simple, and perfect as a base for
 - 💎 **Minimal, responsive, and modern** design
 - 🧩 Includes only **essential UI components**
 - 🧭 Clean and easy-to-understand structure
-- 🪶 Beautiful icons using **[Phosphor Icons](https://phosphoricons.com/)**
-- 🌙 *(Optional)* Dark mode support
+- 🪶 Beautiful icons using **[Phosphor Icons](https://phosphoricons.com/)**\
 
 ---
 
@@ -71,6 +70,7 @@ You can use Zepdash as a **static HTML template** or integrate it into your work
 ### Option 1 — Static HTML
 Just clone the repository and open the file in your browser:
 ```bash
-git clone https://github.com/yourusername/zepdash.git
+git clone https://github.com/zupzep/zepdash.git
 cd zepdash
+
 open index.html
