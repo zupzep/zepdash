@@ -220,15 +220,15 @@ body {
 }
 
 .zd-sidenav-light .zd-sidenav-menu .nav-link.active {
-  /* color: #0d6efd; */
+  color: #0d6efd;
   background-color: #f8f9fa;
   border-radius: 0.8rem;
-  font-weight: 500;
+  font-weight: bold;
 }
 
 .zd-sidenav-light .zd-sidenav-menu .nav-link.active .zd-nav-link-icon {
   color: #0d6efd;
-  font-weight: 500;
+  font-weight: bold;
 }
 
 .zd-sidenav-light .zd-sidenav-footer {
@@ -300,4 +300,5 @@ ul.dropdown-menu li a.dropdown-item{
   border-color: #EAEDF4;
 
 }
+
 
