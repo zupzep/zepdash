@@ -74,10 +74,11 @@ Common ready-to-use pages:
 
 You can use Zepdash as a **static HTML template** or integrate it into your workflow.
 
-### Option 1 — Static HTML
+### Static HTML
 Just clone the repository and open the file in your browser:
 ```bash
 git clone https://github.com/zupzep/zepdash.git
 cd zepdash
 
 open index.html
+
