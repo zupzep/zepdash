@@ -1,185 +1,183 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>zepdash</title>
+<head>
+  <!-- Basic SEO -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>zepdash</title>
 
-        <link rel="icon" type="image/x-icon" href="assets//img/favicon.ico"> 
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+  <!-- Description & Keywords -->
+  <meta name="description" content="zepdash is a modern, responsive admin dashboard built for analytics and monitoring. Built with Bootstrap and customizable components." />
+  <meta name="keywords" content="zepdash, admin dashboard, bootstrap template, analytics, responsive dashboard, web admin" />
+  <meta name="author" content="zupzep" />
 
-        <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
-        <link href="assets/css/styles.css" rel="stylesheet" />
+  <!-- Open Graph (for social sharing) -->
+  <meta property="og:title" content="zepdash - Modern Admin Dashboard" />
+  <meta property="og:description" content="Manage analytics, monitor performance, and visualize data with zepdash, a modern dashboard template." />
+  <meta property="og:image" content="https://zepdash.vercel.app/assets/img/logo.png" />
+  <meta property="og:url" content="https://zepdash.vercel.app/" />
+  <meta property="og:type" content="website" />
 
-        <link rel="stylesheet" href="assets/css/phosphor/bold/style.css">
-        <link rel="stylesheet" href="assets/css/phosphor/regular/style.css">
-        <link rel="stylesheet" href="assets/css/phosphor/fill/style.css">
-    </head>
-    <body class="zd-nav-fixed">
-        <nav class="zd-topnav navbar navbar-expand navbar-light">
-            <!-- Navbar Brand-->
-            <div class="navbar-brand ps-3">
-                <img src="assets/img/logo.png" alt="Logo" class="logo-navbar">
-                <span>zepdash</span>
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Styles -->
+  <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="assets/css/styles.css" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/phosphor/bold/style.css" />
+  <link rel="stylesheet" href="assets/css/phosphor/regular/style.css" />
+  <link rel="stylesheet" href="assets/css/phosphor/fill/style.css" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "zepdash",
+    "url": "https://zepdash.vercel.app",
+    "description": "Modern Bootstrap-based admin dashboard for analytics and data visualization.",
+    "author": {
+      "@type": "Person",
+      "name": "zupzep",
+      "url": "https://github.com/zupzep"
+    }
+  }
+  </script>
+</head>
+
+<body class="zd-nav-fixed">
+  <header>
+    <nav class="zd-topnav navbar navbar-expand navbar-light">
+      <div class="navbar-brand ps-3 d-flex align-items-center">
+        <img src="assets/img/logo.png" alt="Zepdash Logo" class="logo-navbar" />
+        <span class="ms-2 fw-semibold">Zepdash</span>
+      </div>
+
+      <button class="btn btn-light" id="sidebarToggle" aria-label="Toggle sidebar">
+        <i class="ph-bold ph-sidebar-simple"></i>
+      </button>
+
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle dropdown-user" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <span>Zepdash User</span>
+          </a>
+          <ul class="dropdown-menu dropdown-menu-end shadow-sm" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#!">Settings</a></li>
+            <li><a class="dropdown-item" href="#!">Activity Log</a></li>
+            <li><hr class="dropdown-divider" /></li>
+            <li><a class="dropdown-item" href="#!">Logout</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <div id="layoutSidenav">
+    <aside id="layoutSidenav_nav">
+      <nav class="zd-sidenav accordion zd-sidenav-light" id="sidenavAccordion">
+        <div class="zd-sidenav-menu">
+          <div class="nav">
+            <h2 class="zd-sidenav-menu-heading">Menu</h2>
+
+            <a class="nav-link active" href="index.html">
+              <div class="zd-nav-link-icon"><i class="ph-bold ph-house"></i></div>
+              <span>Dashboard</span>
+            </a>
+
+            <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#componentsCollapse">
+              <div class="zd-nav-link-icon"><i class="ph-bold ph-squares-four"></i></div>
+              <span>Components</span>
+              <div class="zd-sidenav-collapse-arrow"><i class="ph-bold ph-caret-down"></i></div>
+            </a>
+
+            <div class="collapse" id="componentsCollapse" data-bs-parent="#sidenavAccordion">
+              <nav class="zd-sidenav-menu-nested nav">
+                <a class="nav-link" href="#">Alerts</a>
+                <a class="nav-link" href="#">Badges</a>
+                <a class="nav-link" href="#">Buttons</a>
+                <a class="nav-link" href="#">Cards</a>
+              </nav>
             </div>
-            <!-- Sidebar Toggle-->
-            <button class="btn btn-light" id="sidebarToggle" href="#!">
-                <i class="ph-bold ph-sidebar-simple"></i>
-            </button>           
-            <!-- Navbar-->
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle dropdown-user" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        <span>Zepdash User</span>
-                    </a>
-                    <ul class="dropdown-menu dropdown-menu-end shadow-sm" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="#!">Settings</a></li>
-                        <li><a class="dropdown-item" href="#!">Activity Log</a></li>
-                        <li><hr class="dropdown-divider" /></li>
-                        <li><a class="dropdown-item" href="#!">Logout</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </nav>
-        <div id="layoutSidenav">
-            <div id="layoutSidenav_nav">
-                <nav class="zd-sidenav accordion zd-sidenav-light" id="sidenavAccordion">
-                    <div class="zd-sidenav-menu">
-                        <div class="nav">
-                            <div class="zd-sidenav-menu-heading">Menu</div>
-                            <a class="nav-link active" href="index.html">
-                                <div class="zd-nav-link-icon"><i class="ph-bold ph-house"></i></div>
-                                <span>Dashboard</span>
-                            </a>
-                           
-                            <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#componentsCollapse" aria-expanded="false" aria-controls="collapseLayouts">
-                                <div class="zd-nav-link-icon"><i class="ph-bold ph-squares-four"></i></div>
-                                <span>Components</span>
-                                <div class="zd-sidenav-collapse-arrow"><i class="ph-bold ph-caret-down"></i></div>
-                            </a>
-                            <div class="collapse" id="componentsCollapse" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
-                                <nav class="zd-sidenav-menu-nested nav">
-                                    <a class="nav-link" href="index.html">Alerts</a>
-                                    <a class="nav-link" href="index.html">Badges</a>
-                                    <a class="nav-link" href="index.html">Buttons</a>
-                                    <a class="nav-link" href="index.html">Cards</a>
-                                </nav>
-                            </div>
 
-                            <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#formsCollapse" aria-expanded="false" aria-controls="collapseLayouts">
-                                <div class="zd-nav-link-icon"><i class="ph-bold ph-notepad"></i></div>
-                                <span>Forms</span>
-                                <div class="zd-sidenav-collapse-arrow"><i class="ph-bold ph-caret-down"></i></div>
-                            </a>
-                            <div class="collapse" id="formsCollapse" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
-                                <nav class="zd-sidenav-menu-nested nav">
-                                    <a class="nav-link" href="index.html">Basic Input</a>
-                                    <a class="nav-link" href="index.html">Form Layout</a>
-                                    <a class="nav-link" href="index.html">Form validation</a>
-                                </nav>
-                            </div>
+            <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#formsCollapse">
+              <div class="zd-nav-link-icon"><i class="ph-bold ph-notepad"></i></div>
+              <span>Forms</span>
+              <div class="zd-sidenav-collapse-arrow"><i class="ph-bold ph-caret-down"></i></div>
+            </a>
 
-                            <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#tablesCollapse" aria-expanded="false" aria-controls="collapseLayouts">
-                                <div class="zd-nav-link-icon"><i class="ph-bold ph-table"></i></div>
-                                <span>Tables</span>
-                                <div class="zd-sidenav-collapse-arrow"><i class="ph-bold ph-caret-down"></i></div>
-                            </a>
-                            <div class="collapse" id="tablesCollapse" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
-                                <nav class="zd-sidenav-menu-nested nav">
-                                    <a class="nav-link" href="index.html">Basic Table</a>
-                                    <a class="nav-link" href="index.html">Responsive Table</a>
-                                </nav>
-                            </div>
-
-                            <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#pagesCollapse" aria-expanded="false" aria-controls="collapseLayouts">
-                                <div class="zd-nav-link-icon"><i class="ph-bold ph-file-text"></i></div>
-                                <span>Pages</span>
-                                <div class="zd-sidenav-collapse-arrow"><i class="ph-bold ph-caret-down"></i></div>
-                            </a>
-                            <div class="collapse" id="pagesCollapse" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
-                                <nav class="zd-sidenav-menu-nested nav">
-                                    <a class="nav-link" href="index.html">Login</a>
-                                    <a class="nav-link" href="index.html">Register</a>
-                                    <a class="nav-link" href="index.html">404 Error</a>
-                                </nav>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="zd-sidenav-footer">
-                        <div class="small">Logged in as:</div>
-                        Zepdash User
-                    </div>
-                </nav>
+            <div class="collapse" id="formsCollapse" data-bs-parent="#sidenavAccordion">
+              <nav class="zd-sidenav-menu-nested nav">
+                <a class="nav-link" href="#">Basic Input</a>
+                <a class="nav-link" href="#">Form Layout</a>
+                <a class="nav-link" href="#">Validation</a>
+              </nav>
             </div>
-            <div id="layoutSidenav_content">
-                <main>
-                    <div class="container-fluid px-4">
-                        <h5 class="mt-4 mb-0">Dashboard</h5>
-                        <p class="">Dashboard - Sidenav Light</p>
-                        <div class="row">
-                            <div class="col-lg-4">
-                                <div class="card mb-4">
-                                    <div class="card-body">
-                                        This page is an example of using the light side navigation option. By appending the
-                                        <code>.zd-sidenav-light</code>
-                                        class to the
-                                        <code>.zd-sidenav</code>
-                                        class, the side navigation will take on a light color scheme. The
-                                        <code>.zd-sidenav-dark</code>
-                                        is also available for a darker option.
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4">
-                                <div class="card mb-4">
-                                    <div class="card-body">
-                                        This page is an example of using the light side navigation option. By appending the
-                                        <code>.zd-sidenav-light</code>
-                                        class to the
-                                        <code>.zd-sidenav</code>
-                                        class, the side navigation will take on a light color scheme. The
-                                        <code>.zd-sidenav-dark</code>
-                                        is also available for a darker option.
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4">
-                                <div class="card mb-4">
-                                    <div class="card-body">
-                                        This page is an example of using the light side navigation option. By appending the
-                                        <code>.zd-sidenav-light</code>
-                                        class to the
-                                        <code>.zd-sidenav</code>
-                                        class, the side navigation will take on a light color scheme. The
-                                        <code>.zd-sidenav-dark</code>
-                                        is also available for a darker option.
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </main>
-                <!-- <footer class="py-4 bg-light mt-auto">
-                    <div class="container-fluid px-4">
-                        <div class="d-flex align-items-center justify-content-between small">
-                            <div class="text-muted">Copyright &copy; Your Website 2023</div>
-                            <div>
-                                <a href="#">Privacy Policy</a>
-                                &middot;
-                                <a href="#">Terms &amp; Conditions</a>
-                            </div>
-                        </div>
-                    </div>
-                </footer> -->
+
+            <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#tablesCollapse">
+              <div class="zd-nav-link-icon"><i class="ph-bold ph-table"></i></div>
+              <span>Tables</span>
+              <div class="zd-sidenav-collapse-arrow"><i class="ph-bold ph-caret-down"></i></div>
+            </a>
+
+            <div class="collapse" id="tablesCollapse" data-bs-parent="#sidenavAccordion">
+              <nav class="zd-sidenav-menu-nested nav">
+                <a class="nav-link" href="#">Basic Table</a>
+                <a class="nav-link" href="#">Responsive Table</a>
+              </nav>
             </div>
+          </div>
         </div>
-        <script src="assets/js/bootstrap.bundle.min.js"></script>
-        <script src="assets/js/scripts.js"></script>
-    </body>
+
+        <footer class="zd-sidenav-footer">
+          <small>Logged in as:</small>
+          <div>Zepdash User</div>
+        </footer>
+      </nav>
+    </aside>
+
+    <main id="layoutSidenav_content">
+      <section class="container-fluid px-4">
+        <header class="my-4">
+          <h1 class="h4 mb-0">Dashboard</h1>
+          <p class="text-muted">zepdash - Light Sidenav Dashboard Example</p>
+        </header>
+
+        <div class="row">
+          <article class="col-lg-4">
+            <div class="card mb-4">
+              <div class="card-body">
+                This example uses the <code>.zd-sidenav-light</code> class for a light navigation style.
+              </div>
+            </div>
+          </article>
+
+          <article class="col-lg-4">
+            <div class="card mb-4">
+              <div class="card-body">
+                Switch to <code>.zd-sidenav-dark</code> for a dark navigation look.
+              </div>
+            </div>
+          </article>
+
+          <article class="col-lg-4">
+            <div class="card mb-4">
+              <div class="card-body">
+                zepdash helps developers build responsive, modern dashboards easily.
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/scripts.js"></script>
+</body>
 </html>
