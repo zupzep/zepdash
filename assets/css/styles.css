@@ -139,12 +139,12 @@ body {
   flex-direction: column;
   height: 100%;
   flex-wrap: nowrap;
-  padding-left: 8px;
-  padding-right: 14px;
 }
 
 .zd-sidenav .zd-sidenav-menu {
   flex-grow: 1;
+  padding-left:8px;
+  padding-right:8px;
 }
 
 .zd-sidenav .zd-sidenav-menu .nav {
@@ -300,6 +300,7 @@ ul.dropdown-menu li a.dropdown-item{
   border-color: #EAEDF4;
 
 }
+
 
 
 
