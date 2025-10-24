@@ -66,7 +66,7 @@ Common ready-to-use pages:
 ## ⚙️ Technologies Used
 - [Bootstrap 5](https://getbootstrap.com/)
 - [Phosphor Icons](https://phosphoricons.com/)
-- *(Optional)* [Chart.js](https://www.chartjs.org/) for simple charts
+- [Apache ECharts](https://echarts.apache.org/)
 
 ---
 
@@ -81,4 +81,5 @@ git clone https://github.com/zupzep/zepdash.git
 cd zepdash
 
 open index.html
+
 
