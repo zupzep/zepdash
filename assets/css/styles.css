@@ -193,7 +193,7 @@ body {
 }
 
 .zd-sidenav .zd-sidenav-footer {
-  padding: 0.75rem;
+  padding: 0.75rem 1.2rem 0.75rem 1.2rem;
   flex-shrink: 0;
 }
 
@@ -300,6 +300,7 @@ ul.dropdown-menu li a.dropdown-item{
   border-color: #EAEDF4;
 
 }
+
 
 
 
