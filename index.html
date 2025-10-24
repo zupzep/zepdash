@@ -187,22 +187,13 @@
         </header>
 
         <div class="row">
-          <article class="col-lg-4">
+          <div class="col-lg-8">
             <div class="card mb-4">
               <div class="card-body">
-                <div id="mainChart" style="width: 100%; height: 400px;"></div>
+                <div id="mainChart" style="width: 100%;"></div>
               </div>
             </div>
-          </article>
-
-          <article class="col-lg-4">
-            <div class="card mb-4">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-              </div>
-            </div>
-          </article>
+          </div>
 
           <article class="col-lg-4">
             <div class="card mb-4">
@@ -228,7 +219,7 @@
     // Opsi chart
     const option = {
       title: {
-        text: 'Statistik Pengguna zepdash',
+        text: 'Users',
         left: 'center'
       },
       tooltip: {
@@ -239,19 +230,19 @@
       },
       xAxis: {
         type: 'category',
-        data: ['Sen', 'Sel', 'Rab', 'Kam', 'Jum', 'Sab', 'Min']
+        data: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul']
       },
       yAxis: {
         type: 'value'
       },
       series: [
         {
-          name: 'Aktif',
+          name: 'Active',
           data: [120, 200, 150, 80, 70, 110, 130],
           type: 'bar'
         },
         {
-          name: 'Tidak Aktif',
+          name: 'Non-Active',
           data: [60, 100, 90, 40, 50, 70, 60],
           type: 'bar'
         }
@@ -267,3 +258,4 @@
 
 </body>
 </html>
+
