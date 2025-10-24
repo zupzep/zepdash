@@ -66,7 +66,7 @@ Halaman siap pakai yang umum digunakan:
 ## ⚙️ Teknologi yang Digunakan
 - [Bootstrap 5](https://getbootstrap.com/)
 - [Phosphor Icons](https://phosphoricons.com/)
-- *(Opsional)* [Chart.js](https://www.chartjs.org/) untuk grafik sederhana
+- [Apache ECharts](https://echarts.apache.org/)
 
 ---
 
