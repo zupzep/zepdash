@@ -190,7 +190,7 @@
           <div class="col-lg-8">
             <div class="card mb-4">
               <div class="card-body">
-                <div id="mainChart" style="width: 100%; height: 400px;"></div>
+                <div id="barChart" style="height: 400px;"></div>
               </div>
             </div>
           </div>
@@ -198,8 +198,7 @@
           <article class="col-lg-4">
             <div class="card mb-4">
               <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+                <div id="pieChart" style="height: 400px;"></div>
               </div>
             </div>
           </article>
@@ -212,51 +211,73 @@
   <script src="https://zepdash.vercel.app/assets/js/scripts.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/echarts@5/dist/echarts.min.js"></script>
   <script>
-    // Inisialisasi chart di elemen #mainChart
-    const chartDom = document.getElementById('mainChart');
-    const myChart = echarts.init(chartDom);
-  
-    // Opsi chart
-    const option = {
-      title: {
-        text: 'Users',
-        left: 'center'
-      },
-      tooltip: {
-        trigger: 'axis'
-      },
-      legend: {
-        bottom: 0
-      },
+    // === BAR CHART ===
+    const barDom = document.getElementById('barChart');
+    const barChart = echarts.init(barDom);
+    const barOption = {
+      tooltip: { trigger: 'axis' },
+      legend: { bottom: 0 },
       xAxis: {
         type: 'category',
-        data: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul']
+        data: ['Sen', 'Sel', 'Rab', 'Kam', 'Jum', 'Sab', 'Min']
       },
-      yAxis: {
-        type: 'value'
-      },
+      yAxis: { type: 'value' },
       series: [
         {
-          name: 'Active',
+          name: 'Aktif',
           data: [120, 200, 150, 80, 70, 110, 130],
-          type: 'bar'
+          type: 'bar',
+          itemStyle: { color: '#4e73df' }
         },
         {
-          name: 'Non-Active',
+          name: 'Tidak Aktif',
           data: [60, 100, 90, 40, 50, 70, 60],
-          type: 'bar'
+          type: 'bar',
+          itemStyle: { color: '#e74a3b' }
         }
       ]
     };
-  
-    // Tampilkan chart
-    myChart.setOption(option);
-  
+    barChart.setOption(barOption);
+
+    // === PIE CHART ===
+    const pieDom = document.getElementById('pieChart');
+    const pieChart = echarts.init(pieDom);
+    const pieOption = {
+      tooltip: { trigger: 'item', formatter: '{b}: {c} ({d}%)' },
+      legend: { bottom: 0 },
+      series: [
+        {
+          name: 'Status Pelanggan',
+          type: 'pie',
+          radius: '65%',
+          center: ['50%', '50%'],
+          data: [
+            { value: 1048, name: 'Aktif' },
+            { value: 735, name: 'Tidak Aktif' },
+            { value: 580, name: 'Pending' },
+            { value: 484, name: 'Banned' },
+          ],
+          emphasis: {
+            itemStyle: {
+              shadowBlur: 10,
+              shadowOffsetX: 0,
+              shadowColor: 'rgba(0, 0, 0, 0.5)'
+            }
+          }
+        }
+      ]
+    };
+    pieChart.setOption(pieOption);
+
     // Responsif
-    window.addEventListener('resize', () => myChart.resize());
+    window.addEventListener('resize', () => {
+      barChart.resize();
+      pieChart.resize();
+    });
   </script>
 
 </body>
 </html>
+
 
 
