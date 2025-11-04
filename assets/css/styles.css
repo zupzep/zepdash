@@ -265,6 +265,10 @@ hr.dropdown-divider {
     border-color: #f8f9fa;
 }
 
+.zd-topnav.navbar ul.navbar-nav li.nav-item.dropdown{
+  margin-right: 16px;
+}
+
 ul.dropdown-menu {
   border-radius: 0.8rem;
   border-color: #EAEDF4;
@@ -307,6 +311,7 @@ ul.dropdown-menu li a.dropdown-item:hover {
   border-radius: 1.2rem;
   border-color: #EAEDF4;
 }
+
 
 
 
